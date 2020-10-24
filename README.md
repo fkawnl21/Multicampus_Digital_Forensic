@@ -1,16 +1,24 @@
 # 프로젝트 소개
 
-MFT 로그를 활용하여 정보 유출 행위 탐지
-
+드라이브에 존재하는 모든 파일, 디렉토리에 대한 정보를 가진 MFT의 로그를 분석하여 활용하여 이상 유출 행위 미리 탐지
 
 # 프로젝트 목적
 
 MFT는 NFTS에 있어 가장 핵심적인 역할로 파일 크기, 작성 일자, 사용 권한, 데이터 내용 등, 파일에 관한 모든 정보가 저장된다.
-MFT 로그 파일을 파싱하는 도구인 FTKImager를 활용하여, 파싱된 파일을 분석하는 AnaylzeMFT를 활용하도록 한다.
+MFT 로그 파일을 추출하는 도구인 FTKImager를 활용하여, 파싱된 파일을 분석하는 AnaylzeMFT를 활용하도록 한다.
 
-# 프로젝트 개요
+* 한글 인코딩
+* 필터값 코딩
+* 
 
-MFT 로그를 활용하나 정보 유출 행위 탐지
+파일 생성
+- DataFrame 으로 변형해서 Matplotlib으로 시각화 
+
+파일 정지
+
+
+Active가 Inactive가 되면 
+
 
 
 # 기획 배경
@@ -31,9 +39,9 @@ MFT 로그 자동 분석 인공지능 개발
     1. 사용 도구
     
     - VMWare - Windows 10 환경
-    - FTK Imager -
-    - analyzeMFT - 파이썬 코드 (fully parse the MFT file from an NTFS filesystem) 
-    - HxD - Hex값으로 파일 여는 것
+    - FTK Imager : 
+    - analyzeMFT : 파이썬 코드 (fully parse the MFT file from an NTFS filesystem) 
+   
     
     2. 분석 경로
     
@@ -50,7 +58,8 @@ MFT 로그 자동 분석 인공지능 개발
 # 한계 및 개선점
 
 1. WinHex - demo 버전은 parsing 하는 데이터가 제한적이다. --> FTK Imager로 변경
-2. analyzeMFT   - 날짜, 한글 인코딩이 깨졌다.
+2. analyzeMFT   - 날짜
+                - 한글 인코딩이 깨졌다.
                 - 불필요한 파일을 제외하는 필터하는 코드가 필요하다.
 
 
